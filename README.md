@@ -4,7 +4,7 @@ This is Simple Reminder Android Application Developed using Android Studio.
 1.Set Remidner
 2.Delete Reminder
 3.Add Messages for Remider it will notify you on time
-# concepts implemented
+# Concepts Implemented
 1.CustomListView
 2.SqlLite Database
 3.SplashScreen Animation
