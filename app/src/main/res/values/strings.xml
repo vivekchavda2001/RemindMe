@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Remind Me</string>
+    <string name="msg_hint">Write Reminder i.e Take Lunch</string>
+    <string name="titleBar">List Of Reminder</string>
+    <string name="titleAbout">About Us</string>
+    <string name="about">About</string>
+    <string name="name">Vivek Chavda</string>
+
+    <string name="email">Vchavda464@rku.ac.in</string>
+    <string name="college">B.Tech, Rk University</string>
+    <string name="desc">This is Reminder App which is used to set reminder for various events of day-to-day life so you can\'t forgot any event.</string>
+
+</resources>
