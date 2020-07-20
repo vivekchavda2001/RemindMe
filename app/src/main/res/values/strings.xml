@@ -5,9 +5,21 @@
     <string name="titleAbout">About Us</string>
     <string name="about">About</string>
     <string name="name">Vivek Chavda</string>
-
     <string name="email">Vchavda464@rku.ac.in</string>
-    <string name="college">B.Tech, Rk University</string>
+    <string name="college">B.Tech, RK University</string>
     <string name="desc">This is Reminder App which is used to set reminder for various events of day-to-day life so you can\'t forgot any event.</string>
+    <string name="choose_date_and_time">Choose date and time</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="save">Save</string>
+    <string name="noRemider">No Reminders</string>
+    <string name="RemiderSet">Reminder Set</string>
+    <string name="Remider">Reminder</string>
+    <string name="RemiderDelete">Reminder Deleted</string>
+    <string name="nullAlert">Time And Date Should not be NULL</string>
+    <string name="save_every_moments">Save Every Moments...</string>
+    <string name="delete_reminder">Delete Reminder</string>
+    <string name="delete_reminder_confirm">Do you want to delete this reminder?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
 
 </resources>

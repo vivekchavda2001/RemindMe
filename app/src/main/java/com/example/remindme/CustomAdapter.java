@@ -101,7 +101,7 @@ public class CustomAdapter extends BaseAdapter {
     public void mdeleteReminder(String id){
         Boolean res =  databaseHelper.mDeleteReminder(id);
         if(res){
-            Toast.makeText(c, "Reminder Deleted", Toast.LENGTH_SHORT).show();
+            Toast.makeText(c, R.string.RemiderDelete, Toast.LENGTH_SHORT).show();
         }
     }
     public void deleteforBackEnd(String id){

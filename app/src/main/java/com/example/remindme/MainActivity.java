@@ -95,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.abt:
                 Intent i = new Intent(MainActivity.this,AboutScreen.class);
                 startActivity(i);
+                finish();
                 return true;
         }
         return false;
@@ -102,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
     private void mAddToList(ArrayList<mSingleRow> arrayList) {
         Cursor data = databaseHelper.display();
         if(data.getCount()==0){
-            Toast.makeText(this, "No Reminders", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.noRemider, Toast.LENGTH_SHORT).show();
 
         }else {
 
@@ -178,7 +179,7 @@ public class MainActivity extends AppCompatActivity {
                     mSetBackEnd(textView,message);
 
                 }else{
-                    Toast.makeText(getApplicationContext(), "Time And Date Should not be NULL", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.nullAlert, Toast.LENGTH_SHORT).show();
 
                 }
             }
@@ -209,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
             overridePendingTransition(0, 0);
             startActivity(getIntent());
             overridePendingTransition(0, 0);
-            Toast.makeText(MainActivity.this, "Reminder Set", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, R.string.RemiderSet, Toast.LENGTH_LONG).show();
 
 
 

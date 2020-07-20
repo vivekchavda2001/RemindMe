@@ -17,7 +17,7 @@
         android:textColor="#ffffff"
         android:textStyle="bold"
         android:textSize="24dp"
-        android:text="Delete Reminder">
+        android:text="@string/delete_reminder">
 
     </TextView>
 
@@ -29,7 +29,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:hint="Do you want to delete this reminder?"
+        android:hint="@string/delete_reminder_confirm"
         android:textSize="20dp"
         android:typeface="serif" />
 
@@ -41,7 +41,7 @@
         android:id="@+id/yes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Yes"
+        android:text="@string/yes"
         android:backgroundTint="@color/themecolor"
         android:layout_weight="1"
         android:textAllCaps="false"
@@ -52,7 +52,7 @@
            android:id="@+id/no"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="No"
+           android:text="@string/no"
            android:backgroundTint="@color/themecolor"
            android:layout_weight="1"
            android:textAllCaps="false"

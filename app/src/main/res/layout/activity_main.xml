@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_wave"
+    android:clipToPadding="false"
     tools:context=".MainActivity">
 
 
@@ -16,6 +17,7 @@
         android:layout_margin="10dp"
         android:divider="@android:color/transparent"
         android:dividerHeight="10.0sp"
+
         android:padding="10dp"
         android:scrollbars="vertical" />
 

@@ -7,7 +7,9 @@
         android:layout_width="fill_parent"
         android:backgroundTint="#FAEBD7"
         android:orientation="horizontal"
-        android:background="@drawable/my_drop_shadow"
+        android:elevation="20dp"
+        android:clipToPadding="false"
+           android:background="@drawable/my_drop_shadow"
         android:padding="10dp">
     <ImageView
         android:layout_width="50dp"
@@ -51,7 +53,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:clickable="true"
-
         android:src="@drawable/ic_baseline_delete_24"></ImageView>
 
 

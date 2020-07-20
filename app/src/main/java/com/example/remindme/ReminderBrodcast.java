@@ -9,6 +9,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
@@ -31,6 +32,8 @@ public class ReminderBrodcast extends BroadcastReceiver {
 
         databaseHelper = new DatabaseHelper(context);
         Uri alarmsound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+;
+
         Intent intent1 = new Intent(context,MainActivity.class);
         intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         TaskStackBuilder taskStackBuilder = TaskStackBuilder.create(context);
@@ -47,11 +50,12 @@ public class ReminderBrodcast extends BroadcastReceiver {
         }
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
-        Notification notification = builder.setContentTitle("Reminder")
+        Notification notification = builder.setContentTitle("Remider")
                 .setContentText(message).setAutoCancel(true)
                 .setSound(alarmsound).setSmallIcon(R.drawable.logo)
                 .setContentIntent(intent2)
                 .setChannelId("my_channel_01")
+                .setLights(Color.BLUE, 500, 500)
                 .build();
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
