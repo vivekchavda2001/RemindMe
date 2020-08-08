@@ -1,13 +1,9 @@
 package com.example.remindme;
 
-import androidx.annotation.Nullable;
 import java.util.Random;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
 
-import android.app.ActionBar;
 import android.app.AlarmManager;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -19,7 +15,6 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -31,22 +26,16 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
-import java.util.Random;
 import java.util.TimeZone;
-
-import static android.app.Notification.FLAG_AUTO_CANCEL;
 
 public class MainActivity extends AppCompatActivity {
    // Button mReminder;
@@ -132,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
         final String[] mssg = new String[1];
         dialog = new Dialog(MainActivity.this);
-        dialog.setContentView(R.layout.dialogforreminder);
+        dialog.setContentView(R.layout.dialog_view);
         dialog.setCanceledOnTouchOutside(true);
         final TextView textView = dialog.findViewById(R.id.date);
         Button add;

@@ -1,129 +1,243 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".AboutScreen">
+    android:background="@color/cardview_light_background"
+    tools:context=".AboutScreen"
+    >
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="120dp"
-        android:layout_marginLeft="10dp"
-
-        android:layout_marginStart="10dp"
-        android:src="@drawable/profile"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37"></ImageView>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="194dp"
-        android:layout_height="37dp"
-        android:fontFamily="@font/playfair_display_bold"
-        android:text="@string/name"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/white"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.772"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.387" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_light_background"
+        tools:context=".About_as">
 
         <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:padding="10dp">
+            android:layout_height="250dp"
+            android:background="@drawable/ic_about_wave"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="start"
-                app:srcCompat="@drawable/ic_baseline_notes_24"
-                tools:layout_editor_absoluteX="34dp"
-                tools:layout_editor_absoluteY="431dp" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="281dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto"
-                android:justificationMode="inter_word"
-                android:maxLines="5"
-                android:paddingLeft="15dp"
-                android:text="@string/desc"
-                android:textSize="18sp"
-                tools:layout_editor_absoluteX="90dp"
-                tools:layout_editor_absoluteY="421dp"></TextView>
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="131dp"
+                    android:layout_height="168dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="195dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="195dp"
+                    android:layout_marginTop="50dp"
+                    android:elevation="30dp"
+
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.681"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/textView_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/developer"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                    app:layout_constraintHorizontal_bias="0.48"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.404" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:padding="10dp">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                app:srcCompat="@drawable/ic_baseline_school_24" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto"
-                android:paddingLeft="15dp"
-                android:text="@string/college"
-                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:clipToPadding="false"
+
+                    android:padding="10dp">
+
+                    <ImageView
+
+                        style="@style/abt_icon"
+                        app:srcCompat="@drawable/ic_baseline_email_24"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/text_email"
+                            style="@style/aboutTextMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/headEmail"
+
+                            />
+
+                        <TextView
+                            style="@style/aboutTextsub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/email" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:clipToPadding="false"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp">
+
+                    <ImageView
+
+                        style="@style/abt_icon"
+                        app:srcCompat="@drawable/ic_baseline_school_24"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+
+                            style="@style/aboutTextMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/org" />
+
+                        <TextView
+                            style="@style/aboutTextsub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/college" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:clipToPadding="false"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        style="@style/abt_icon"
+                        app:srcCompat="@drawable/ic_baseline_notes_24"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            style="@style/aboutTextMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/note" />
+
+                        <TextView
+                            style="@style/aboutTextsub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/desc" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:clipToPadding="false"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        style="@style/abt_icon"
+                        app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+
+                            style="@style/aboutTextMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/version" />
+
+                        <TextView
+                            style="@style/aboutTextsub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/n_version" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                app:srcCompat="@drawable/ic_baseline_email_24" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto"
-                android:paddingLeft="15dp"
-                android:text="@string/email"
-                android:textSize="18sp" />
-
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

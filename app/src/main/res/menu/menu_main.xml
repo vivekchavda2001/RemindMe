@@ -4,6 +4,7 @@
     tools:context="example.javatpoint.com.optionmenu.MainActivity">
 
     <item  android:id="@+id/abt"
+        android:icon="@drawable/ic_baseline_play_arrow_24"
         android:title="@string/about"/>
 
 </menu>

@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:backgroundTint="#FAEBD7"
-        android:orientation="horizontal"
-        android:elevation="20dp"
-        android:clipToPadding="false"
-           android:background="@drawable/my_drop_shadow"
-        android:padding="10dp">
+<LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="70dp"
+    android:layout_width="fill_parent"
+
+    android:orientation="horizontal"
+    android:clipToPadding="false"
+
+    android:background="@drawable/dialog_bg"
+    android:elevation="15dp"
+    android:padding="10dp">
+
+
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_gravity="left"
-        android:src="@drawable/ic_baseline_access_alarm_24"
+        android:layout_gravity="center_vertical"
+        card_view:srcCompat="@drawable/ic_baseline_access_alarm_24"
         ></ImageView>
 
     <LinearLayout
@@ -23,6 +25,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_weight="1"
+        android:layout_marginLeft="5dp"
         android:gravity="center_vertical"
         android:padding="5dp">
 
@@ -31,9 +34,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="serif"
+            android:maxLength="35"
             android:text="Task will be shown here"
             android:textSize="12sp"
-            android:maxLength="35"
             android:textStyle="bold"></TextView>
 
         <TextView
@@ -49,11 +52,11 @@
 
     <ImageView
         android:id="@+id/delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_gravity="center_vertical"
         android:clickable="true"
-        android:src="@drawable/ic_baseline_delete_24"></ImageView>
+        card_view:srcCompat="@drawable/ic_baseline_delete_24"></ImageView>
 
+    </LinearLayout>
 
-</LinearLayout>

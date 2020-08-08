@@ -19,7 +19,8 @@
         android:textColor="#ffffff"
         android:textStyle="bold"
         android:textSize="24dp"
-        android:text="@string/set_reminder">
+        android:text="@string/set_reminder"
+        android:gravity="center_horizontal">
 
     </TextView>
 
